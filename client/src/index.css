@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+#root {
+  min-height: 100vh;
+}
+.leaflet-container {
+  font-family: inherit;
+}

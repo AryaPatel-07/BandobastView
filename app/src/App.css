@@ -1,0 +1,108 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+.app-header {
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.app-header h1 {
+  margin: 0;
+  font-size: 1.1rem;
+  flex: 1;
+}
+.app-buckle {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+.back-btn, .logout-btn {
+  padding: 0.4rem 0.75rem;
+  background: #334155;
+  border: none;
+  border-radius: 6px;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.back-btn:hover, .logout-btn:hover {
+  background: #475569;
+}
+.app-main {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+.meta {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+.postings-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.posting-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+}
+.posting-card:active {
+  opacity: 0.9;
+}
+.posting-route, .posting-point {
+  margin: 0.35rem 0 0 0;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+.detail-route {
+  padding: 0.5rem 1rem;
+  background: #1e293b;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+.map-container {
+  height: 280px;
+  width: 100%;
+  background: #0f172a;
+}
+.detail-actions {
+  padding: 1rem;
+  background: #1e293b;
+  border-top: 1px solid #334155;
+}
+.action-btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  background: #334155;
+  color: #e2e8f0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.action-btn.primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+.action-btn.active {
+  background: #dc2626;
+  border-color: #dc2626;
+  color: #fff;
+}
+.action-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

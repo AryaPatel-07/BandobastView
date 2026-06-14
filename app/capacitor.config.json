@@ -1,0 +1,7 @@
+{
+  "appId": "com.bandobast.app",
+  "appName": "Bandobast App",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
+

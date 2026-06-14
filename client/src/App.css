@@ -1,0 +1,194 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid #334155;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.header h1 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+.subtitle {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+.logout-btn {
+  padding: 0.4rem 0.75rem;
+  background: #334155;
+  border: 1px solid #475569;
+  color: #e2e8f0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.logout-btn:hover {
+  background: #475569;
+}
+.layout {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+.sidebar {
+  width: 380px;
+  flex-shrink: 0;
+  background: #1e293b;
+  border-right: 1px solid #334155;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.map-wrap {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+}
+
+/* Form elements */
+.sidebar section {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #334155;
+}
+.sidebar h2 {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+.sidebar label {
+  display: block;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-bottom: 0.25rem;
+}
+.sidebar input,
+.sidebar select,
+.sidebar textarea,
+.sidebar button {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #475569;
+  border-radius: 6px;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+.sidebar input::placeholder {
+  color: #64748b;
+}
+.sidebar button {
+  cursor: pointer;
+  font-weight: 600;
+  border-color: #3b82f6;
+  background: #2563eb;
+  color: #fff;
+  margin-bottom: 0;
+}
+.sidebar button:hover {
+  background: #1d4ed8;
+}
+.sidebar button.secondary {
+  background: #334155;
+  border-color: #475569;
+}
+.sidebar button.secondary:hover {
+  background: #475569;
+}
+.sidebar button.danger {
+  background: #b91c1c;
+  border-color: #dc2626;
+}
+.sidebar button.danger:hover {
+  background: #991b1b;
+}
+.sidebar .btn-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.sidebar .btn-row button {
+  flex: 1;
+}
+
+.list-item {
+  padding: 0.6rem 0.8rem;
+  background: #0f172a;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.list-item:hover {
+  border-color: #475569;
+}
+.list-item.active {
+  border-color: #3b82f6;
+  background: #1e3a5f;
+}
+.list-item .title {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.list-item .meta {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 0.2rem;
+}
+
+.point-card {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.6rem;
+}
+.point-card.selected {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+.point-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #f1f5f9;
+}
+.point-card .buckle-list {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-top: 0.4rem;
+}
+.point-card input.buckle-input {
+  margin-bottom: 0.4rem;
+}
+.point-card .add-buckle {
+  font-size: 0.8rem;
+  color: #3b82f6;
+  cursor: pointer;
+  margin-top: 0.3rem;
+}
+.point-card .add-buckle:hover {
+  text-decoration: underline;
+}
+
+.publish-section {
+  margin-top: auto;
+  padding: 1rem 1.25rem;
+  background: #0f172a;
+  border-top: 1px solid #334155;
+}
+.publish-section button.big {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+}

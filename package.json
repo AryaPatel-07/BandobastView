@@ -1,0 +1,23 @@
+{
+  "name": "ahmedabad-bandobast-portal",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "node server/index.js",
+    "dev:client": "cd client && npm run dev",
+    "dev:app": "cd app && npm run dev",
+    "build": "cd client && npm run build",
+    "build:app": "cd app && npm run build",
+    "install:all": "npm install && cd client && npm install && cd app && npm install"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
