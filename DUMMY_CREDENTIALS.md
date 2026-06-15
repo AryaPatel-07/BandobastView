@@ -1,3 +1,4 @@
+
 ## Dummy credentials (local demo only)
 
 ### Web / Portal (`client/`)
@@ -21,4 +22,4 @@
 ## Notes
 
 - These are **not secure** and are meant only for local testing/demo.
-- If you want real authentication, we can replace this with **Firebase Authentication** (email/password, phone OTP, etc.).
+- If you want real authentication, we have to replace this with **Firebase Authentication** (email/password, phone OTP, etc.).
